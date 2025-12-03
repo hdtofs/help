@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>مفكرتي</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .toolbar {
+      padding: 10px;
+      background: #eee;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .toolbar select, .toolbar input {
+      padding: 5px;
+    }
+    .editor {
+      min-height: 300px;
+      padding: 15px;
+      margin: 10px;
+      background: white;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+    .note-container {
+      margin: 20px;
+    }
+    details {
+      margin-bottom: 10px;
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .note-buttons {
+      margin: 10px;
+    }
+    button {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>مفكرتي</h1>
+</header>
+
+<div class="toolbar">
+  <select onchange="format('formatBlock', this.value)">
+    <option value="p">فقرة</option>
+    <option value="h1">عنوان H1</option>
+    <option value="h2">عنوان H2</option>
+    <option value="h3">عنوان H3</option>
+    <option value="h4">عنوان H4</option>
+    <option value="h5">عنوان H5</option>
+  </select>
+  <input type="color" onchange="format('foreColor', this.value)" title="لون النص">
+  <input type="color" onchange="format('backColor', this.value)" title="خلفية النص">
+  <select onchange="format('fontSize', this.value)">
+    <option value="1">صغير</option>
+    <option value="3" selected>عادي</option>
+    <option value="5">كبير</option>
+    <option value="7">كبير جدا</option>
+  </select>
+</div>
+
+<div class="note-buttons">
+  <button onclick="addNote()">مفكرة جديدة</button>
+  <button onclick="saveNotes()">حفظ المفكرات</button>
+  <button onclick="loadNotes()">تحميل المفكرات</button>
+</div>
+
+<div class="note-container" id="noteContainer">
+  <!-- المفكرات ستظهر هنا -->
+</div>
+
+<script>
+  function format(command, value = null) {
+    document.execCommand(command, false, value);
+  }
+
+  function addNote(content = '') {
+    const container = document.getElementById('noteContainer');
+    const noteId = `note-${Date.now()}`;
+    const note = document.createElement('details');
+    note.innerHTML = `
+      <summary contenteditable="true">عنوان المفكرة</summary>
+      <div class="editor" contenteditable="true">${content}</div>
+    `;
+    container.appendChild(note);
+  }
+
+  function saveNotes() {
+    const notes = [];
+    document.querySelectorAll('#noteContainer details').forEach(detail => {
+      const title = detail.querySelector('summary').innerText;
+      const content = detail.querySelector('.editor').innerHTML;
+      notes.push({ title, content });
+    });
+    localStorage.setItem('myNotes', JSON.stringify(notes));
+    alert('تم الحفظ');
+  }
+
+  function loadNotes() {
+    const notes = JSON.parse(localStorage.getItem('myNotes') || '[]');
+    const container = document.getElementById('noteContainer');
+    container.innerHTML = '';
+    notes.forEach(note => {
+      addNote(note.content);
+      const lastNote = container.lastChild;
+      lastNote.querySelector('summary').innerText = note.title;
+    });
+  }
+
+  // تحميل تلقائي عند بدء الصفحة
+  window.onload = loadNotes;
+</script>
+
+</body>
+</html>
