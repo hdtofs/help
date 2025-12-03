@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: #fafafa;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Main header */
+.main-header {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.main-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Cards */
+.cards-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.info-card {
+  background: white;
+  padding: 25px;
+  width: 280px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 14px rgba(0,0,0,0.12);
+}
+
+.info-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  color: #555;
+}
+
+/* Page headers */
+.sub-header {
+  text-align: center;
+  padding: 50px 20px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.sub-header h1 {
+  font-size: 30px;
+}
+
+/* Content */
+.content {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  font-size: 17px;
+}
+
+.content h2 {
+  margin-top: 25px;
+  font-size: 22px;
+}
