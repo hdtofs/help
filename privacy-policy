@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Wasf Chrome Extension</title>
+
+  <style>
+    :root {
+      --text-color: #1f2937;
+      --muted-color: #6b7280;
+      --border-color: #e5e7eb;
+      --bg-light: #f9fafb;
+      --accent: #2563eb;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial,
+        "Noto Sans", sans-serif;
+      color: var(--text-color);
+      background-color: #ffffff;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      margin-top: 1.75rem;
+    }
+
+    p {
+      margin: 0.5rem 0 1rem;
+    }
+
+    .meta {
+      color: var(--muted-color);
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.9rem;
+    }
+
+    table th,
+    table td {
+      border: 1px solid var(--border-color);
+      padding: 10px 12px;
+      vertical-align: top;
+    }
+
+    table th {
+      background-color: var(--bg-light);
+      text-align: left;
+      font-weight: 600;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    details {
+      margin-top: 3rem;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      background-color: var(--bg-light);
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 14px 18px;
+      font-weight: 600;
+      color: var(--accent);
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details[open] summary {
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-color);
+    }
+
+    .arabic {
+      direction: rtl;
+      text-align: right;
+      padding: 24px 20px 28px;
+      background-color: #ffffff;
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.85rem;
+      color: var(--muted-color);
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <!-- English Version -->
+    <h1>Privacy Policy – Wasf Chrome Extension</h1>
+    <div class="meta">Effective Date: January 2026</div>
+
+    <p>
+      This Privacy Policy explains how the “Wasf” Chrome extension
+      (“Extension”, “we”, “our”) collects, uses, stores, and protects
+      your data while providing AI-powered product title and description
+      generation for Salla stores. We are committed to transparency and
+      do not collect personal information beyond what is necessary for
+      the Extension’s functionality.
+    </p>
+
+    <h2>1. Data Collection</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Data Type</th>
+          <th>Source</th>
+          <th>Storage Location</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Product Name</td>
+          <td>User input in Salla page</td>
+          <td>Temporary (RAM)</td>
+          <td>Generate AI-powered titles and descriptions</td>
+        </tr>
+        <tr>
+          <td>Product Description</td>
+          <td>User input / generated content</td>
+          <td>Temporary (RAM)</td>
+          <td>Enhance or rephrase descriptions</td>
+        </tr>
+        <tr>
+          <td>OpenAI API Key</td>
+          <td>User input (manual)</td>
+          <td>chrome.storage.local (Encrypted)</td>
+          <td>Authenticate requests to OpenAI</td>
+        </tr>
+        <tr>
+          <td>Generation Settings</td>
+          <td>User selection</td>
+          <td>chrome.storage.sync</td>
+          <td>Customize user experience</td>
+        </tr>
+        <tr>
+          <td>Device ID (UUID)</td>
+          <td>Generated automatically</td>
+          <td>chrome.storage.local</td>
+          <td>Quota enforcement and license validation</td>
+        </tr>
+        <tr>
+          <td>License Key / Coupon</td>
+          <td>User input</td>
+          <td>chrome.storage.sync</td>
+          <td>Enable paid features</td>
+        </tr>
+        <tr>
+          <td>Ratings</td>
+          <td>User input (optional)</td>
+          <td>Supabase (anonymous)</td>
+          <td>Service improvement</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      No data is collected in the background without user interaction,
+      except for the locally generated Device ID and installation date,
+      which are required for functional purposes.
+    </p>
+
+    <h2>2. Device ID & Usage Limits</h2>
+    <p>
+      The Extension generates a random UUID for each installation. This
+      identifier is used exclusively to enforce daily usage limits,
+      prevent abuse, and validate licenses. It is not linked to any
+      personal data, IP address, or hardware information.
+    </p>
+
+    <p>
+      The number of devices per license is limited. License keys may be
+      disabled remotely if abuse or policy violations are detected.
+      Usage limits are subject to fair usage rules and are not
+      unlimited.
+    </p>
+
+    <h2>3. Free and Paid Versions</h2>
+    <p>
+      The Extension offers both free and paid features. Usage limits are
+      clearly disclosed, and quota checks are performed on an external
+      server. No hidden payments or forced registration mechanisms are
+      implemented.
+    </p>
+
+    <h2>4. External Services</h2>
+    <p>
+      The Extension communicates only with OpenAI for text generation
+      and Supabase for quota enforcement, license verification, and
+      anonymous feedback collection. All communications are secured via
+      HTTPS.
+    </p>
+
+    <h2>5. Security</h2>
+    <p>
+      Sensitive data such as the OpenAI API Key is stored encrypted
+      locally and is never shared with intermediate servers. Non-
+      personal technical identifiers are used strictly for functional
+      purposes.
+    </p>
+
+    <h2>6. Policy Updates</h2>
+    <p>
+      This Privacy Policy may be updated periodically. Any changes will
+      be reflected on this page.
+    </p>
+
+    <!-- Arabic Version (Accordion) -->
+    <details>
+      <summary>اضغط هنا لقراءة سياسة الخصوصية باللغة العربية</summary>
+
+      <div class="arabic">
+        <h1>سياسة الخصوصية لإضافة وصف Wasf</h1>
+        <div class="meta">تاريخ النفاذ: يناير 2026</div>
+
+        <p>
+          توضح هذه السياسة كيفية قيام إضافة وصف Wasf بجمع واستخدام
+          وتخزين وحماية البيانات عند تقديم خدمات توليد عناوين ووصف
+          المنتجات باستخدام الذكاء الاصطناعي لمتاجر سلة.
+        </p>
+
+        <h2>1. البيانات التي يتم جمعها</h2>
+        <p>
+          يتم جمع بيانات محدودة وضرورية فقط لتشغيل الإضافة، مثل اسم
+          المنتج ووصفه، إعدادات التوليد، ومعرف جهاز عشوائي.
+        </p>
+
+        <h2>2. بصمة الجهاز Device ID</h2>
+        <p>
+          تنشئ الإضافة معرف جهاز عشوائي UUID لكل تثبيت. يستخدم هذا
+          المعرف حصريا لفرض حدود الاستخدام اليومية والتحقق من الرخص،
+          ولا يرتبط بأي بيانات شخصية أو عنوان IP.
+        </p>
+
+        <h2>3. حدود الاستخدام والنسخة المدفوعة</h2>
+        <p>
+          تحتوي الإضافة على حدود استخدام واضحة ونسخة مدفوعة. يتم العد
+          والتحقق من الحصص عبر خادم خارجي، دون فرض أي تسجيل خفي أو
+          رسوم غير معلنة.
+        </p>
+
+        <h2>4. الخوادم الخارجية</h2>
+        <p>
+          تتصل الإضافة بخوادم OpenAI لتوليد المحتوى وخوادم Supabase
+          للتحقق من الحصص والرخص واستقبال التقييمات المجهولة، وكل
+          الاتصالات تتم عبر HTTPS.
+        </p>
+
+        <h2>5. الامان والخصوصية</h2>
+        <p>
+          يتم تخزين المفاتيح الحساسة بشكل مشفر محليا. لا يتم مشاركة
+          أي بيانات شخصية مع اطراف ثالثة، وتستخدم جميع المعرفات
+          التقنية لاغراض تشغيلية فقط.
+        </p>
+
+        <h2>6. تحديثات السياسة</h2>
+        <p>
+          قد يتم تحديث سياسة الخصوصية هذه عند الحاجة، وسيتم نشر
+          التحديثات في هذه الصفحة.
+        </p>
+      </div>
+    </details>
+
+    <footer>
+      © 2026 Wasf Chrome Extension. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
