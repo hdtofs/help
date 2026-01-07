@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>وصف Wasf - مساعد المحتوى الذكي لمتاجر سلة</title>
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --text: #0f172a;
+      --muted: #475569;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 32px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    header h1 {
+      font-size: 34px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 16px;
+      color: var(--muted);
+      max-width: 720px;
+      margin: auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .feature {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      text-align: right;
+    }
+
+    .feature h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+    }
+
+    .feature p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .contact {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: 28px 20px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .contact h2 {
+      font-size: 24px;
+      margin-bottom: 6px;
+    }
+
+    .contact p {
+      font-size: 14px;
+      opacity: 0.9;
+      max-width: 640px;
+      margin: 0 auto 14px;
+    }
+
+    .email-box {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      margin: 0 6px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>وصف Wasf</h1>
+      <p>
+        إضافة ذكية لمتصفح جوجل كروم، مصممة خصيصا لتجار منصة سلة، تساعدك على إنشاء
+        عناوين ووصف منتجات احترافي باستخدام الذكاء الاصطناعي مباشرة داخل صفحة المنتج.
+      </p>
+    </header>
+
+    <section class="features">
+      <div class="feature">
+        <h3>توليد عناوين ذكية</h3>
+        <p>
+          إنشاء عناوين تسويقية جذابة اعتمادا على الكلمة المفتاحية مع تحكم في الطول والنبرة.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>وصف منتجات منسق</h3>
+        <p>
+          توليد وصف احترافي يدعم العناوين والقوائم والنص المنسق بما يناسب متاجر سلة.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>استخدام مجاني بحدود واضحة</h3>
+        <p>
+          الاستفادة من الإضافة مجانا مع عدد توليدات يومية محدد بشكل عادل وشفاف.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>نسخة مدفوعة اختيارية</h3>
+        <p>
+          الترقية اختيارية للحصول على حدود أعلى وميزات إضافية دون أي التزام إجباري.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>جرب Wasf Pro مجانا</h2>
+      <p>
+        للتجربة المجانية للنسخة المدفوعة لمدة ثلاثة أيام، يمكنك التواصل معنا مباشرة عبر البريد الإلكتروني،
+        وسيتم إرسال كوبون التفعيل لك يدويا.
+      </p>
+
+      <div class="email-box">
+        holoolpro@gmail.com
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2026 HoloolPro</span>
+      ·
+      <a href="https://help.holoolpro.com/privacy-policy" target="_blank">سياسة الخصوصية</a>
+      ·
+      <a href="https://help.holoolpro.com/terms" target="_blank">الشروط والاحكام</a>
+    </footer>
+
+  </div>
+
+</body>
+</html>
