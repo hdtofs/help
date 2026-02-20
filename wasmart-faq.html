@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>الأسئلة الشائعة - أيقونة واتساب العائمة</title>
+  <meta name="description" content="الأسئلة الشائعة حول تطبيق أيقونة واتساب العائمة لمتاجر سلة" />
+  <style>
+    :root {
+      --primary: #1e40af;
+      --primary-dark: #1e3a8a;
+      --text: #1f2937;
+      --light: #f9fafb;
+      --gray: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Tajawal', system-ui, -apple-system, sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      color: var(--gray);
+      font-size: 1.05rem;
+    }
+
+    section {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: var(--primary-dark);
+      margin: 32px 0 16px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    .faq-item {
+      margin-bottom: 24px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      background: white;
+    }
+
+    .faq-question {
+      padding: 18px 24px;
+      font-size: 1.15rem;
+      font-weight: 600;
+      cursor: pointer;
+      background: #f8fafc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.2s;
+    }
+
+    .faq-question:hover {
+      background: #f1f5f9;
+    }
+
+    .faq-answer {
+      padding: 0 24px 18px;
+      display: none;
+      font-size: 1.05rem;
+      color: #374151;
+    }
+
+    .faq-answer.show {
+      display: block;
+    }
+
+    .faq-answer p {
+      margin-bottom: 12px;
+    }
+
+    .faq-answer ul {
+      padding-right: 20px;
+      margin: 12px 0;
+    }
+
+    .faq-answer li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.35rem; }
+      .container { padding: 30px 16px; }
+      .faq-question { font-size: 1.05rem; padding: 16px 20px; }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>الأسئلة الشائعة</h1>
+    <div class="subtitle">تطبيق واسمارت (WaSmart) لمتاجر سلة</div>
+  </header>
+
+  <!-- FAQ Items -->
+  <section>
+    <div class="faq-item">
+      <div class="faq-question">ما هو تطبيق واسمارت؟</div>
+      <div class="faq-answer">
+        <p>هو تطبيق مدفوع يضيف أيقونة واتساب عائمة في أسفل صفحات متجرك على سلة، تتيح للزوار التواصل معك مباشرة عبر واتساب بنقرة واحدة.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">كيف أقوم بتثبيت التطبيق على متجري؟</div>
+      <div class="faq-answer">
+        <p>1. اذهب إلى لوحة التحكم في متجرك على سلة<br>
+           2. اختر قسم "التطبيقات" أو "متجر التطبيقات"<br>
+           3. ابحث عن "واسمارت أو WaSmart" أو ادخل من الرابط المباشر<br>
+           4. اضغط "تثبيت" ثم وافق على الصلاحيات المطلوبة (Settings Read & Write فقط)</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">ما هي الصلاحيات التي يطلبها التطبيق؟</div>
+      <div class="faq-answer">
+        <p>يطلب التطبيق فقط صلاحية "Settings Read and Write" لقراءة وكتابة إعدادات التطبيق الخاصة بك (مثل رقم الواتساب والموضع والحجم).<br>
+        لا يطلب أي صلاحيات تتعلق بالطلبات، المنتجات، العملاء أو أي بيانات حساسة أخرى.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">لماذا لا تظهر الأيقونة بعد التثبيت؟</div>
+      <div class="faq-answer">
+        <p>الأسباب الشائعة:</p>
+        <ul>
+          <li>لم تدخل رقم هاتف واتساب بعد في إعدادات التطبيق</li>
+          <li>حقل "رقم الهاتف" فارغ أو به خطأ (تأكد من إدخال الأرقام بدون + أو مسافات)</li>
+          <li>أعد تحميل الصفحة بعد الحفظ (Ctrl + F5 للمتصفح)</li>
+          <li>تأكد من أن التطبيق لا يزال مثبتاً (قد يتم إلغاؤه تلقائياً في بعض الحالات النادرة)</li>
+        </ul>
+        <p>إذا استمرت المشكلة، تواصل معنا عبر البريد الإلكتروني.</p>
+      </div>
+    </div>
+
+
+
+    <div class="faq-item">
+      <div class="faq-question">هل يظهر الإشعار المؤقت دائماً؟</div>
+      <div class="faq-answer">
+        <p>لا، الإشعار المؤقت ("هل تحتاج مساعدة؟" أو النص الذي تكتبه) يظهر فقط إذا:</p>
+        <ul>
+          <li>أدخلت نصاً في حقل "إشعار تنبيهي مؤقت" في الإعدادات</li>
+          <li>لم يكن الحقل فارغاً</li>
+        </ul>
+        <p>إذا تركت الحقل فارغاً، لن يظهر أي إشعار على الإطلاق.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">هل التطبيق آمن ويحترم خصوصية زواري؟</div>
+      <div class="faq-answer">
+        <p>نعم تماماً:</p>
+        <ul>
+          <li>لا نجمع أي بيانات من زوار المتجر</li>
+          <li>لا نستخدم أي أدوات تتبع أو تحليلات خارجية</li>
+          <li>رقم الواتساب وإعداداتك مخزنة بأمان في Supabase (مزود قاعدة بيانات موثوق)</li>
+          <li>اقرأ <a href="/privacy" style="color: #1e40af;">سياسة الخصوصية</a> للتفاصيل الكاملة</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">ماذا يحدث إذا ألغيت تثبيت التطبيق؟</div>
+      <div class="faq-answer">
+        <p>عند إلغاء التثبيت:</p>
+        <ul>
+          <li>تختفي الأيقونة فوراً من جميع صفحات المتجر</li>
+          <li>يتم تعطيل الويدجت تلقائياً في قاعدة البيانات</li>
+          <li>لا يتم حذف البيانات فوراً (لكن يمكن حذفها يدوياً إذا طلبت)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">كيف أتواصل معكم إذا واجهت مشكلة؟</div>
+      <div class="faq-answer">
+        <p>يرجى إرسال بريد إلكتروني إلى:<br>
+        <a href="mailto:holoolpro@gmail.com" style="color: #1e40af; font-weight: bold;">holoolpro@gmail.com</a><br>
+        وضح المشكلة + رابط متجرك + لقطة شاشة إن أمكن، وسنرد خلال 24 ساعة غالباً.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 تطبيق واسمارت (WaSmart) – جميع الحقوق محفوظة</p>
+  </footer>
+</div>
+
+<script>
+  // جعل الأسئلة قابلة للطي/الفتح
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+      const answer = question.nextElementSibling;
+      answer.classList.toggle('show');
+    });
+  });
+</script>
+
+</body>
+</html>
