@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>سياسة الخصوصية - أيقونة واتساب العائمة</title>
+  <meta name="description" content="سياسة خصوصية تطبيق أيقونة واتساب العائمة لمتاجر سلة" />
+  <style>
+    :root {
+      --primary: #1e40af;
+      --primary-dark: #1e3a8a;
+      --text: #1f2937;
+      --light: #f9fafb;
+      --gray: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Tajawal', system-ui, -apple-system, sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      color: var(--gray);
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    .update-date {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    section {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: var(--primary-dark);
+      margin-bottom: 16px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    p, li {
+      font-size: 1.05rem;
+      margin-bottom: 14px;
+      color: #374151;
+    }
+
+    ul {
+      padding-right: 24px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    .contact {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    .email {
+      font-size: 1.15rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .email:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.35rem; }
+      .container { padding: 30px 16px; }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>سياسة الخصوصية</h1>
+    <div class="subtitle">تطبيق أيقونة واتساب العائمة (WhatsApp Floating Button)</div>
+    <div class="subtitle">لمتاجر سلة</div>
+    <div class="update-date">آخر تحديث: 19 فبراير 2026</div>
+  </header>
+
+  <section>
+    <h2>مقدمة</h2>
+    <p>نحن في تطبيق "أيقونة واتساب العائمة" نحترم خصوصيتك وخصوصية زوار متجرك. هذه السياسة توضح بشفافية كيفية جمع البيانات واستخدامها وحمايتها عند استخدام التطبيق.</p>
+  </section>
+
+  <section>
+    <h2>المعلومات التي نجمعها</h2>
+    <p><strong>أ. بيانات صاحب المتجر (التاجر):</strong></p>
+    <ul>
+      <li>معرف المتجر على سلة (salla_merchant)</li>
+      <li>رمز الدولة ورقم الهاتف الذي يتم إدخاله في إعدادات التطبيق</li>
+      <li>إعدادات التطبيق (حجم الأيقونة، موضعها، نص الإشعار المؤقت)</li>
+      <li>تاريخ التثبيت وتاريخ الإلغاء (إن وجد)</li>
+    </ul>
+
+    <p><strong>ب. بيانات زوار المتجر:</strong></p>
+    <ul>
+      <li>لا نجمع أي بيانات شخصية من زوار متجرك</li>
+      <li>لا نستخدم ملفات تعريف الارتباط (cookies) أو أدوات تتبع أو تحليلات خارجية</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>كيفية استخدام البيانات</h2>
+    <p>نستخدم البيانات المذكورة أعلاه فقط للأغراض التالية:</p>
+    <ul>
+      <li>عرض أيقونة واتساب العائمة في متجرك حسب الإعدادات التي اخترتها</li>
+      <li>تمكين الزوار من التواصل المباشر معك عبر واتساب</li>
+      <li>تشغيل الإشعار المؤقت (إذا تم تفعيله)</li>
+      <li>تنفيذ عمليات التثبيت والإلغاء بشكل صحيح</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>مشاركة البيانات</h2>
+    <p>لا نشارك أي بيانات مع أي طرف ثالث، باستثناء:</p>
+    <ul>
+      <li>Supabase (مزود قاعدة البيانات) – يتم تخزين البيانات بتشفير وأمان عالي</li>
+      <li>سلة (Salla) – فقط من خلال الـ Webhooks الرسمية لتنفيذ التثبيت والإعدادات</li>
+    </ul>
+    <p>لا نبيع ولا نؤجر ولا نتبادل بيانات التجار أو زوارهم مع أي جهة أخرى.</p>
+  </section>
+
+  <section>
+    <h2>التخزين والأمان</h2>
+    <ul>
+      <li>جميع البيانات مخزنة في <strong>Supabase</strong> (بنية تحتية آمنة ومتوافقة مع معايير الحماية الدولية)</li>
+      <li>رمز الوصول (access_token) الخاص بسلة مشفر ويُستخدم فقط داخل Edge Functions الآمنة</li>
+      <li>لا يُكشف رمز الوصول أبداً في أي endpoint عام</li>
+      <li>نستخدم HTTPS في جميع الاتصالات</li>
+      <li>يتم تعطيل الويدجت تلقائياً عند إلغاء التثبيت</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>حقوقك كصاحب متجر</h2>
+    <p>يمكنك في أي وقت:</p>
+    <ul>
+      <li>تعديل أو حذف رقم الواتساب والإعدادات من لوحة التحكم في سلة</li>
+      <li>إلغاء تثبيت التطبيق بالكامل (سيتم تعطيل الأيقونة فوراً)</li>
+      <li>طلب حذف كامل بياناتك بالتواصل معنا</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>مدة الاحتفاظ بالبيانات</h2>
+    <p>نحتفظ بالبيانات طالما التطبيق مثبت على متجرك. عند إلغاء التثبيت، يتم تعطيل الويدجت فوراً، ويمكن حذف السجل يدوياً من قاعدة البيانات.</p>
+  </section>
+
+  <section>
+    <h2>التغييرات على سياسة الخصوصية</h2>
+    <p>قد نقوم بتحديث هذه السياسة من وقت لآخر. سننشر تاريخ التحديث الجديد في أعلى الصفحة، ونوصيك بمراجعتها دورياً.</p>
+  </section>
+
+  <div class="contact">
+    <h2>الاتصال بنا</h2>
+    <p>لأي استفسار أو طلب حذف بيانات، يرجى التواصل معنا على:</p>
+    <a href="mailto:holoolpro@gmail.com" class="email">holoolpro@gmail.com</a>
+  </div>
+
+  <footer>
+    <p>© 2026 تطبيق أيقونة واتساب العائمة – جميع الحقوق محفوظة</p>
+  </footer>
+</div>
+
+</body>
+</html>
