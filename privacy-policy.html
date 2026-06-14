@@ -1,324 +1,614 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – Wasf Chrome Extension</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wasf Privacy Policy</title>
 
-  <style>
-    :root {
-      --text-color: #1f2937;
-      --muted-color: #6b7280;
-      --border-color: #e5e7eb;
-      --bg-light: #f9fafb;
-      --accent: #2563eb;
-    }
+<style>
+:root{
+    --bg:#f8fafc;
+    --card:#ffffff;
+    --text:#111827;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+    --primary:#2563eb;
+}
 
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial,
-        "Noto Sans", sans-serif;
-      color: var(--text-color);
-      background-color: #ffffff;
-      line-height: 1.7;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 48px 20px;
-    }
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:Inter,Segoe UI,Arial,sans-serif;
+    line-height:1.8;
+    padding:40px 20px;
+}
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
+.container{
+    max-width:900px;
+    margin:auto;
+}
 
-    h2 {
-      font-size: 1.25rem;
-      margin-top: 2.5rem;
-      margin-bottom: 0.75rem;
-    }
+.card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:40px;
+    box-shadow:0 2px 10px rgba(0,0,0,.03);
+}
 
-    h3 {
-      font-size: 1.05rem;
-      margin-top: 1.75rem;
-    }
+h1{
+    font-size:2rem;
+    margin-bottom:10px;
+}
 
-    p {
-      margin: 0.5rem 0 1rem;
-    }
+h2{
+    margin-top:40px;
+    margin-bottom:12px;
+    font-size:1.4rem;
+}
 
-    .meta {
-      color: var(--muted-color);
-      font-size: 0.9rem;
-      margin-bottom: 2rem;
-    }
+h3{
+    margin-top:24px;
+    margin-bottom:10px;
+    font-size:1.1rem;
+}
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1.5rem 0;
-      font-size: 0.9rem;
-    }
+p{
+    margin-bottom:14px;
+}
 
-    table th,
-    table td {
-      border: 1px solid var(--border-color);
-      padding: 10px 12px;
-      vertical-align: top;
-    }
+ul{
+    padding-left:24px;
+    margin:12px 0;
+}
 
-    table th {
-      background-color: var(--bg-light);
-      text-align: left;
-      font-weight: 600;
-    }
+li{
+    margin:6px 0;
+}
 
-    ul {
-      padding-left: 1.25rem;
-    }
+hr{
+    border:none;
+    border-top:1px solid var(--border);
+    margin:32px 0;
+}
 
-    details {
-      margin-top: 3rem;
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      background-color: var(--bg-light);
-    }
+.meta{
+    color:var(--muted);
+    margin-bottom:20px;
+}
 
-    summary {
-      cursor: pointer;
-      padding: 14px 18px;
-      font-weight: 600;
-      color: var(--accent);
-      list-style: none;
-    }
+.toggle{
+    margin-top:40px;
+    border:1px solid var(--border);
+    border-radius:12px;
+    overflow:hidden;
+}
 
-    summary::-webkit-details-marker {
-      display: none;
-    }
+.toggle-btn{
+    width:100%;
+    border:none;
+    background:white;
+    padding:18px 20px;
+    text-align:right;
+    font-size:1rem;
+    cursor:pointer;
+    font-weight:600;
+}
 
-    details[open] summary {
-      border-bottom: 1px solid var(--border-color);
-      color: var(--text-color);
-    }
+.toggle-btn:hover{
+    background:#fafafa;
+}
 
-    .arabic {
-      direction: rtl;
-      text-align: right;
-      padding: 24px 20px 28px;
-      background-color: #ffffff;
-    }
+.toggle-content{
+    display:none;
+    border-top:1px solid var(--border);
+    padding:30px;
+    direction:rtl;
+    text-align:right;
+}
 
-    footer {
-      margin-top: 4rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--border-color);
-      font-size: 0.85rem;
-      color: var(--muted-color);
-      text-align: center;
+.toggle-content.active{
+    display:block;
+}
+
+a{
+    color:var(--primary);
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+@media (max-width:768px){
+    .card{
+        padding:24px;
     }
-  </style>
+}
+</style>
 </head>
-
 <body>
-  <main class="container">
-    <!-- English Version -->
-    <h1>Privacy Policy – Wasf Chrome Extension</h1>
-    <div class="meta">Effective Date: January 2026</div>
 
-    <p>
-      This Privacy Policy explains how the “Wasf” Chrome extension
-      (“Extension”, “we”, “our”) collects, uses, stores, and protects
-      your data while providing AI-powered product title and description
-      generation for Salla stores. We are committed to transparency and
-      do not collect personal information beyond what is necessary for
-      the Extension’s functionality.
-    </p>
+<div class="container">
 
-    <h2>1. Data Collection</h2>
+<div class="card">
 
-    <table>
-      <thead>
-        <tr>
-          <th>Data Type</th>
-          <th>Source</th>
-          <th>Storage Location</th>
-          <th>Purpose</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Product Name</td>
-          <td>User input in Salla page</td>
-          <td>Temporary (RAM)</td>
-          <td>Generate AI-powered titles and descriptions</td>
-        </tr>
-        <tr>
-          <td>Product Description</td>
-          <td>User input / generated content</td>
-          <td>Temporary (RAM)</td>
-          <td>Enhance or rephrase descriptions</td>
-        </tr>
-        <tr>
-          <td>OpenAI API Key</td>
-          <td>User input (manual)</td>
-          <td>chrome.storage.local (Encrypted)</td>
-          <td>Authenticate requests to OpenAI</td>
-        </tr>
-        <tr>
-          <td>Generation Settings</td>
-          <td>User selection</td>
-          <td>chrome.storage.sync</td>
-          <td>Customize user experience</td>
-        </tr>
-        <tr>
-          <td>Device ID (UUID)</td>
-          <td>Generated automatically</td>
-          <td>chrome.storage.local</td>
-          <td>Quota enforcement and license validation</td>
-        </tr>
-        <tr>
-          <td>License Key / Coupon</td>
-          <td>User input</td>
-          <td>chrome.storage.sync</td>
-          <td>Enable paid features</td>
-        </tr>
-        <tr>
-          <td>Ratings</td>
-          <td>User input (optional)</td>
-          <td>Supabase (anonymous)</td>
-          <td>Service improvement</td>
-        </tr>
-      </tbody>
-    </table>
+<h1>Privacy Policy</h1>
 
-    <p>
-      No data is collected in the background without user interaction,
-      except for the locally generated Device ID and installation date,
-      which are required for functional purposes.
-    </p>
+<p class="meta"><strong>Effective Date:</strong> June 2026<br>
+<strong>Product:</strong> Wasf Chrome Extension</p>
 
-    <h2>2. Device ID & Usage Limits</h2>
-    <p>
-      The Extension generates a random UUID for each installation. This
-      identifier is used exclusively to enforce daily usage limits,
-      prevent abuse, and validate licenses. It is not linked to any
-      personal data, IP address, or hardware information.
-    </p>
+<p>This Privacy Policy explains how Wasf Chrome Extension processes limited user data strictly necessary to provide its functionality.</p>
 
-    <p>
-      The number of devices per license is limited. License keys may be
-      disabled remotely if abuse or policy violations are detected.
-      Usage limits are subject to fair usage rules and are not
-      unlimited.
-    </p>
+<hr>
 
-    <h2>3. Free and Paid Versions</h2>
-    <p>
-      The Extension offers both free and paid features. Usage limits are
-      clearly disclosed, and quota checks are performed on an external
-      server. No hidden payments or forced registration mechanisms are
-      implemented.
-    </p>
+<h2>1. Information We Collect</h2>
 
-    <h2>4. External Services</h2>
-    <p>
-      The Extension communicates only with OpenAI for text generation
-      and Supabase for quota enforcement, license verification, and
-      anonymous feedback collection. All communications are secured via
-      HTTPS.
-    </p>
+<p>We collect only the minimum data required to operate authentication, AI generation, billing, and abuse prevention systems.</p>
 
-    <h2>5. Security</h2>
-    <p>
-      Sensitive data such as the OpenAI API Key is stored encrypted
-      locally and is never shared with intermediate servers. Non-
-      personal technical identifiers are used strictly for functional
-      purposes.
-    </p>
+<h3>1.1 Authentication Data</h3>
 
-    <p>
-      - We do not sell, rent, or share user data with third parties for advertising, analytics, or marketing purposes.
-      - Submitting ratings is optional and can be skipped without affecting the core functionality of the Extension. 
-      - The Extension itself does not collect names, email addresses, or personal identifiers.
-      - All locally stored data can be removed at any time by uninstalling the Extension.
+<p>When you sign in using Google OAuth, we receive:</p>
 
-    </p>
+<ul>
+<li>Email address</li>
+<li>Google user ID</li>
+<li>Basic profile information (name and avatar if available)</li>
+</ul>
 
-    <h2>6. Policy Updates</h2>
-    <p>
-      This Privacy Policy may be updated periodically. Any changes will
-      be reflected on this page.
-    </p>
+<p><strong>Purpose:</strong></p>
 
-    <!-- Arabic Version (Accordion) -->
-    <details>
-      <summary>اضغط هنا لقراءة سياسة الخصوصية باللغة العربية</summary>
+<p>This data is used exclusively for:</p>
 
-      <div class="arabic">
-        <h1>سياسة الخصوصية لإضافة وصف Wasf</h1>
-        <div class="meta">تاريخ النفاذ: يناير 2026</div>
+<ul>
+<li>User authentication</li>
+<li>Session management</li>
+<li>Subscription and access control</li>
+</ul>
 
-        <p>
-          توضح هذه السياسة كيفية قيام إضافة وصف Wasf بجمع واستخدام
-          وتخزين وحماية البيانات عند تقديم خدمات توليد عناوين ووصف
-          المنتجات باستخدام الذكاء الاصطناعي لمتاجر سلة.
-        </p>
+<p><strong>Justification:</strong></p>
 
-        <h2>1. البيانات التي يتم جمعها</h2>
-        <p>
-          يتم جمع بيانات محدودة وضرورية فقط لتشغيل الإضافة، مثل اسم
-          المنتج ووصفه، إعدادات التوليد، ومعرف جهاز عشوائي.
-        </p>
+<p>Authentication data is required to securely identify users and maintain access to the service across extension and backend systems.</p>
 
-        <h2>2. بصمة الجهاز Device ID</h2>
-        <p>
-          تنشئ الإضافة معرف جهاز عشوائي UUID لكل تثبيت. يستخدم هذا
-          المعرف حصريا لفرض حدود الاستخدام اليومية والتحقق من الرخص،
-          ولا يرتبط بأي بيانات شخصية أو عنوان IP.
-        </p>
+<h3>1.2 User-Provided Input Data (AI Processing)</h3>
 
-        <h2>3. حدود الاستخدام والنسخة المدفوعة</h2>
-        <p>
-          تحتوي الإضافة على حدود استخدام واضحة ونسخة مدفوعة. يتم العد
-          والتحقق من الحصص عبر خادم خارجي، دون فرض أي تسجيل خفي أو
-          رسوم غير معلنة.
-        </p>
+<p>We process only text explicitly entered by the user inside product input fields, such as:</p>
 
-        <h2>4. الخوادم الخارجية</h2>
-        <p>
-          تتصل الإضافة بخوادم OpenAI لتوليد المحتوى وخوادم Supabase
-          للتحقق من الحصص والرخص واستقبال التقييمات المجهولة، وكل
-          الاتصالات تتم عبر HTTPS.
-        </p>
+<ul>
+<li>Product title</li>
+<li>Product description</li>
+<li>Product attributes (e.g. size, color, features)</li>
+</ul>
 
-        <h2>5. الامان والخصوصية</h2>
-        <p>
-          يتم تخزين المفاتيح الحساسة بشكل مشفر محليا. لا يتم مشاركة
-          أي بيانات شخصية مع اطراف ثالثة، وتستخدم جميع المعرفات
-          التقنية لاغراض تشغيلية فقط.
-        </p>
+<p><strong>Scope Limitation:</strong></p>
 
-        <p>
-          - لا تقوم الاضافة ببيع او مشاركة بيانات المستخدم مع اي طرف ثالث لاغراض اعلانية او تسويقية.
-          - تقديم التقييم اختياري بالكامل ولا يؤثر على عمل الاضافة في حال تجاهله.
-          - الاضافة لا تجمع الاسم او البريد الالكتروني داخل المتصفح.
-          - يمكن للمستخدم حذف جميع البيانات المحلية في اي وقت عبر ازالة الاضافة.
-        </p>
+<ul>
+<li>Only manually entered fields are processed</li>
+<li>No full-page content is accessed</li>
+<li>No browsing history is collected</li>
+<li>No hidden fields, customer data, or order data are accessed</li>
+</ul>
 
-        <h2>6. تحديثات السياسة</h2>
-        <p>
-          قد يتم تحديث سياسة الخصوصية هذه عند الحاجة، وسيتم نشر
-          التحديثات في هذه الصفحة.
-        </p>
-      </div>
-    </details>
+<p><strong>Technical Restriction:</strong></p>
 
-    <footer>
-      © 2026 Wasf Chrome Extension. All rights reserved.
-    </footer>
-  </main>
+<p>The extension includes input-level restrictions to minimize accidental processing of non-product data. It is not designed to process customer or sensitive business information.</p>
+
+<p><strong>Important Restriction:</strong></p>
+
+<ul>
+<li>Customer personal data</li>
+<li>Store order information</li>
+<li>Financial or sensitive business records</li>
+</ul>
+
+<p>Users are responsible for ensuring that only product-related content is entered.</p>
+
+<p><strong>Purpose:</strong></p>
+
+<p>This data is used solely to generate AI-based product titles and descriptions.</p>
+
+<h3>1.3 Minimal Usage Data (Billing & Abuse Prevention Only)</h3>
+
+<p>We store strictly minimal technical records required for:</p>
+
+<ul>
+<li>Credit usage tracking</li>
+<li>Fraud and abuse prevention</li>
+<li>Billing reconciliation</li>
+</ul>
+
+<p>Each record may include:</p>
+
+<ul>
+<li>Feature used (e.g. title generation)</li>
+<li>Timestamp of request</li>
+<li>Credit consumption amount</li>
+<li>Success or failure status</li>
+</ul>
+
+<p><strong>Explicit Limitations:</strong></p>
+
+<p>This data is NOT used for:</p>
+
+<ul>
+<li>Behavioral profiling</li>
+<li>Analytics or marketing analysis</li>
+<li>Advertising</li>
+<li>Cross-site tracking</li>
+</ul>
+
+<p><strong>Additional Clarification:</strong></p>
+
+<p>Usage logs are strictly operational and cannot be used to reconstruct user behavior across sessions.</p>
+
+<p><strong>Justification:</strong></p>
+
+<p>These records are required strictly for enforcing credit-based billing and preventing automated abuse of AI services.</p>
+
+<h3>1.4 Authentication Tokens</h3>
+
+<p>We store authentication tokens locally using Chrome’s storage API (chrome.storage.local).</p>
+
+<p><strong>Security Model:</strong></p>
+
+<ul>
+<li>Tokens are short-lived</li>
+<li>Tokens are automatically rotated via backend session logic</li>
+<li>Tokens are invalidated server-side upon logout or suspicious activity</li>
+</ul>
+
+<p><strong>Purpose:</strong></p>
+
+<p>Used only to maintain authenticated sessions between the extension and backend services.</p>
+
+<h2>2. Data We Do NOT Collect</h2>
+
+<ul>
+<li>Customer data from Salla stores</li>
+<li>Orders or transaction history</li>
+<li>Payment card or banking information</li>
+<li>Full HTML content of web pages</li>
+<li>Browsing history</li>
+<li>Cross-site user activity</li>
+</ul>
+
+<h2>3. Data Scope Limitation (Content Script Access)</h2>
+
+<p>The extension uses Chrome content scripts restricted to specific DOM elements inside the Salla product editor interface.</p>
+
+<p><strong>Access is strictly limited to:</strong></p>
+
+<ul>
+<li>Product name input field</li>
+<li>Product description field</li>
+<li>Product attribute fields entered manually by the user</li>
+</ul>
+
+<p><strong>Technical Enforcement:</strong></p>
+
+<ul>
+<li>No full-page DOM scanning</li>
+<li>No HTML or page snapshot extraction</li>
+<li>No background page access</li>
+<li>No access to customer, order, or analytics sections</li>
+</ul>
+
+<p><strong>Implementation Note:</strong></p>
+
+<p>Access is enforced through selector-based content scripts scoped only to product input fields.</p>
+
+<p>No raw page content, DOM snapshots, or browsing history is transmitted outside the extension.</p>
+
+<h2>4. Data Usage and Flow</h2>
+
+<p>All data flows are initiated only by explicit user actions and are transmitted through secure HTTPS backend APIs.</p>
+
+<p>No background or silent data collection occurs.</p>
+
+<p>We use collected data strictly for:</p>
+
+<ul>
+<li>AI content generation</li>
+<li>Authentication and session management</li>
+<li>Credit-based billing enforcement</li>
+<li>Fraud and abuse prevention</li>
+</ul>
+
+<p>No additional processing is performed.</p>
+
+<h2>5. Data Storage</h2>
+
+<h3>5.1 Local Storage (Browser)</h3>
+
+<p>Stored locally:</p>
+
+<ul>
+<li>Authentication tokens</li>
+<li>User preferences</li>
+</ul>
+
+<p><strong>Security:</strong></p>
+
+<ul>
+<li>Stored in Chrome sandboxed storage</li>
+<li>Tokens are short-lived and rotated</li>
+<li>Tokens are invalidated server-side upon logout or abnormal activity</li>
+</ul>
+
+<h3>5.2 Backend Storage (Supabase)</h3>
+
+<p>Stored securely:</p>
+
+<ul>
+<li>User account data</li>
+<li>Subscription status</li>
+<li>Billing and credit usage records</li>
+</ul>
+
+<p><strong>Security:</strong></p>
+
+<p>We do not access the database directly from the extension. All database operations are handled through secure backend services.</p>
+
+<p>Row-Level Security (RLS) ensures users can only access their own data.</p>
+
+<h2>6. Third-Party Services</h2>
+
+<h3>6.1 OpenAI</h3>
+
+<p>Used for AI generation.</p>
+
+<p>Shared data:</p>
+
+<ul>
+<li>Product text inputs (title, attributes)</li>
+</ul>
+
+<p>Not shared:</p>
+
+<ul>
+<li>User identity</li>
+<li>Authentication tokens</li>
+<li>Page content or store data</li>
+</ul>
+
+<h3>6.2 Google OAuth</h3>
+
+<p>Used for authentication only.</p>
+
+<p>Received data:</p>
+
+<ul>
+<li>Email</li>
+<li>User ID</li>
+<li>Basic profile information</li>
+</ul>
+
+<h3>6.3 LemonSqueezy</h3>
+
+<p>Used for subscription and billing.</p>
+
+<p>Shared data:</p>
+
+<ul>
+<li>User ID (non-sensitive identifier)</li>
+<li>Selected subscription plan</li>
+</ul>
+
+<p>No payment card or financial credentials are processed by the extension.</p>
+
+<h3>6.4 Supabase</h3>
+
+<p>Used for backend infrastructure and database.</p>
+
+<p>Stored data:</p>
+
+<ul>
+<li>User accounts</li>
+<li>Subscription status</li>
+<li>Minimal billing and usage records</li>
+</ul>
+
+<h2>7. Data Retention</h2>
+
+<ul>
+<li>Active accounts: data retained until deletion request</li>
+<li>Billing records: retained for fraud prevention and financial reconciliation</li>
+<li>Local storage: retained until logout or extension removal</li>
+</ul>
+
+<h2>8. User Rights</h2>
+
+<ul>
+<li>Access stored account data</li>
+<li>Request deletion of their data</li>
+<li>Revoke authentication by logging out</li>
+<li>Stop using the extension at any time</li>
+</ul>
+
+<h2>9. Security Summary</h2>
+
+<p>Wasf Chrome Extension follows strict data minimization principles:</p>
+
+<ul>
+<li>Only product-related user input is processed</li>
+<li>No behavioral tracking or surveillance is implemented</li>
+<li>No cross-site data collection occurs</li>
+<li>No browsing activity is monitored or analyzed</li>
+<li>No data is used for profiling or advertising purposes</li>
+</ul>
+
+<h2>10. Contact</h2>
+
+<p>Email: <a href="mailto:support@holoolpro.com">support@holoolpro.com</a></p>
+
+<div class="toggle">
+    <button class="toggle-btn" id="toggleBtn">
+        🇸🇦 سياسة الخصوصية العربية
+    </button>
+
+    <div class="toggle-content" id="arabicContent">
+
+<h2>سياسة الخصوصية</h2>
+
+<p><strong>تاريخ السريان:</strong> يونيو 2026<br>
+<strong>المنتج:</strong> إضافة Wasf لمتصفح Chrome</p>
+
+<p>توضح هذه السياسة كيفية معالجة البيانات المحدودة الضرورية لتشغيل الإضافة.</p>
+
+<h3>1. المعلومات التي نجمعها</h3>
+
+<p>نجمع الحد الأدنى من البيانات اللازمة لتشغيل تسجيل الدخول، والذكاء الاصطناعي، والفوترة، ومنع إساءة الاستخدام.</p>
+
+<h3>1.1 بيانات تسجيل الدخول</h3>
+
+<ul>
+<li>البريد الإلكتروني</li>
+<li>معرف المستخدم في Google</li>
+<li>معلومات الملف الشخصي الأساسية (الاسم والصورة إن وجدت)</li>
+</ul>
+
+<h3>1.2 بيانات الإدخال (معالجة الذكاء الاصطناعي)</h3>
+
+<ul>
+<li>اسم المنتج</li>
+<li>وصف المنتج</li>
+<li>خصائص المنتج</li>
+</ul>
+
+<p><strong>القيود:</strong></p>
+
+<ul>
+<li>لا يتم الوصول إلى الصفحة بالكامل</li>
+<li>لا يتم جمع بيانات العملاء</li>
+<li>لا يتم جمع سجل التصفح</li>
+</ul>
+
+<p><strong>ملاحظة تقنية:</strong></p>
+
+<p>تقتصر الإضافة على الحقول الخاصة بالمنتج فقط، ولا تقوم بجمع أو تحليل أي بيانات خارج هذا النطاق.</p>
+
+<h3>1.3 بيانات الاستخدام (الفوترة ومنع إساءة الاستخدام فقط)</h3>
+
+<ul>
+<li>نوع الميزة المستخدمة</li>
+<li>وقت الطلب</li>
+<li>عدد الرصيد المستخدم</li>
+<li>حالة النجاح أو الفشل</li>
+</ul>
+
+<p><strong>القيود:</strong></p>
+
+<p>لا يتم استخدام هذه البيانات للتتبع أو التحليل أو الإعلانات أو بناء ملفات سلوكية للمستخدم.</p>
+
+<h3>1.4 رموز المصادقة</h3>
+
+<ul>
+<li>الرموز قصيرة العمر</li>
+<li>يتم تحديثها تلقائيًا</li>
+<li>يتم إلغاؤها من جهة الخادم عند تسجيل الخروج أو النشاط غير الطبيعي</li>
+</ul>
+
+<h3>2. البيانات التي لا نجمعها</h3>
+
+<ul>
+<li>بيانات عملاء المتاجر</li>
+<li>الطلبات أو المعاملات</li>
+<li>بيانات الدفع</li>
+<li>محتوى الصفحة الكامل</li>
+<li>سجل التصفح</li>
+<li>نشاط المستخدم عبر المواقع</li>
+</ul>
+
+<h3>3. نطاق الوصول إلى الصفحة</h3>
+
+<p>تستخدم الإضافة سكربتات محتوى مقيدة بعناصر المنتج فقط داخل صفحة Salla.</p>
+
+<h3>4. كيفية استخدام البيانات</h3>
+
+<ul>
+<li>إنشاء محتوى باستخدام الذكاء الاصطناعي</li>
+<li>إدارة تسجيل الدخول</li>
+<li>إدارة الفوترة</li>
+<li>منع إساءة الاستخدام</li>
+</ul>
+
+<h3>5. تخزين البيانات</h3>
+
+<p><strong>محليًا:</strong></p>
+
+<ul>
+<li>رموز الدخول</li>
+<li>التفضيلات</li>
+</ul>
+
+<p><strong>في الخادم:</strong></p>
+
+<ul>
+<li>بيانات الحساب</li>
+<li>الاشتراك</li>
+<li>سجل الاستخدام</li>
+</ul>
+
+<p>ولا يتم الوصول إلى قاعدة البيانات مباشرة من الإضافة، بل عبر خدمات خلفية آمنة.</p>
+
+<h3>6. الخدمات الخارجية</h3>
+
+<ul>
+<li>OpenAI: إنشاء النصوص</li>
+<li>Google OAuth: تسجيل الدخول</li>
+<li>LemonSqueezy: الاشتراكات</li>
+<li>Supabase: البنية الخلفية</li>
+</ul>
+
+<h3>7. الاحتفاظ بالبيانات</h3>
+
+<ul>
+<li>الحسابات: حتى طلب الحذف</li>
+<li>سجلات الفوترة: لأغراض مالية وأمنية</li>
+<li>التخزين المحلي: حتى تسجيل الخروج أو حذف الإضافة</li>
+</ul>
+
+<h3>8. حقوق المستخدم</h3>
+
+<ul>
+<li>الوصول إلى البيانات</li>
+<li>طلب الحذف</li>
+<li>تسجيل الخروج</li>
+<li>إيقاف الاستخدام</li>
+</ul>
+
+<h3>9. ملخص الأمان</h3>
+
+<ul>
+<li>لا يوجد تتبع سلوكي</li>
+<li>لا يتم جمع بيانات تصفح</li>
+<li>لا يتم استخدام البيانات للإعلانات أو التحليل</li>
+</ul>
+
+<h3>10. التواصل</h3>
+
+<p><a href="mailto:support@holoolpro.com">support@holoolpro.com</a></p>
+
+    </div>
+</div>
+
+</div>
+</div>
+
+<script>
+const btn = document.getElementById('toggleBtn');
+const content = document.getElementById('arabicContent');
+
+btn.addEventListener('click', () => {
+    content.classList.toggle('active');
+});
+</script>
+
 </body>
 </html>
